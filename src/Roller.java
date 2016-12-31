@@ -14,6 +14,7 @@ public class Roller {
 	}
 
 	private static int[] Tier1(int amount) {
+		// result is arranged as copper, silver, electrum, gold, platinum
 		int[] result = new int[5];
 		Random random = new Random();
 		for (int i = 0; i < amount; i++) {
@@ -34,6 +35,7 @@ public class Roller {
 	}
 
 	private static int[] Tier2(int amount) {
+		// result is arranged as copper, silver, electrum, gold, platinum
 		int[] result = new int[5];
 		Random random = new Random();
 		for (int i = 0; i < amount; i++) {
@@ -58,6 +60,7 @@ public class Roller {
 	}
 
 	private static int[] Tier3(int amount) {
+		// result is arranged as copper, silver, electrum, gold, platinum
 		int[] result = new int[5];
 		Random random = new Random();
 		for (int i = 0; i < amount; i++) {
@@ -80,6 +83,7 @@ public class Roller {
 	}
 
 	private static int[] Tier4(int amount) {
+		// result is arranged as copper, silver, electrum, gold, platinum
 		int[] result = new int[5];
 		Random random = new Random();
 		for (int i = 0; i < amount; i++) {
