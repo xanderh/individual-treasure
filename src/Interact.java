@@ -1,9 +1,32 @@
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class Interact {
 
 	public static void initialize() {
-		// TODO Auto-generated method stub
-
+		System.out.println("Ready for input");
+		System.out.println("Please format input as '<level> <amount>'");
+		while (true) {
+			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+			try {
+				String line = br.readLine();
+				if (line.equals("quit") || line.equals("Quit") || line.equals("q")) {
+					break;
+				} else {
+					String[] args = line.split(" ");
+					if (args.length % 2 == 1) {
+						System.out.println("Invalid input");
+					} else {
+						generate(args);
+					}
+				}
+			} catch (IOException e) {
+				e.printStackTrace();
+				System.out.println("Something went wrong while reading the input from the file");
+			}
+		}
+		System.out.println("program terminating");
 	}
 
 	public static void generate(String[] args) {

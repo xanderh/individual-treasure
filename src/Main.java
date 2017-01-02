@@ -4,11 +4,11 @@ public class Main {
 	public static void main(String[] args) {
 		if(args.length == 0) {
 			InteractGUI.initialize();
-		} else if (args[0] == "-nogui") {
+		} else if (args[0].equals("-nogui")) {
 			Interact.initialize();
 		} else if (args.length % 2 == 0) {
 			Interact.generate(args);
-		} else if (args[0] == "help") {
+		} else if (args[0].equals("help")) {
 			help();
 		} else {
 			System.out.println("badly formed argument, program closing");
