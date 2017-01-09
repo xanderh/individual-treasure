@@ -110,7 +110,7 @@ public class InteractGUI {
 			// vertical 145-170
 			output[i].setBounds(x, 145, 70, 25);
 			output[i].setHorizontalAlignment(JTextField.LEFT);
-			output[i].setEditable(true);
+			output[i].setEditable(false);
 			output[i].setVisible(true);
 			panel.add(output[i]);
 		}
